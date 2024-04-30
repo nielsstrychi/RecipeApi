@@ -8,7 +8,7 @@ import jakarta.persistence.ManyToOne;
 @Entity
 public class RecipeIngredientEntity extends BasicEntity {
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="RECIPE_ID")
     private RecipeEntity recipe;
 
@@ -22,5 +22,35 @@ public class RecipeIngredientEntity extends BasicEntity {
 
     private Integer quantity;
 
+    public RecipeEntity getRecipe() {
+        return recipe;
+    }
 
+    public void setRecipe(RecipeEntity recipe) {
+        this.recipe = recipe;
+    }
+
+    public IngredientEntity getIngredient() {
+        return ingredient;
+    }
+
+    public void setIngredient(IngredientEntity ingredient) {
+        this.ingredient = ingredient;
+    }
+
+    public MeasurementEntity getMeasurement() {
+        return measurement;
+    }
+
+    public void setMeasurement(MeasurementEntity measurement) {
+        this.measurement = measurement;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
 }

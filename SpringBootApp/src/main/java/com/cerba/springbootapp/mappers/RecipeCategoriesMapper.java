@@ -6,7 +6,7 @@ import com.cerba.springbootapp.entities.RecipeEntity;
 import com.cerba.springbootapp.entities.RecipeIngredientEntity;
 import org.mapstruct.Mapper;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface RecipeCategoriesMapper {
 
     RecipeCategoriesDTO entityToDto(RecipeIngredientEntity entity);

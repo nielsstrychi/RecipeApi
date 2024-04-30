@@ -6,7 +6,7 @@ import com.cerba.springbootapp.entities.MeasurementEntity;
 import com.cerba.springbootapp.entities.RecipeEntity;
 import org.mapstruct.Mapper;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface MeasurementMapper {
 
     MeasurementDTO entityToDto(MeasurementEntity entity);

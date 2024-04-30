@@ -6,7 +6,7 @@ import com.cerba.springbootapp.entities.DietaryRestrictionEntity;
 import com.cerba.springbootapp.entities.RecipeEntity;
 import org.mapstruct.Mapper;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface DietaryRestrictionMapper {
 
     DietaryRestrictionDTO entityToDto(DietaryRestrictionEntity entity);

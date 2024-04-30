@@ -6,4 +6,19 @@ import jakarta.persistence.Entity;
 public class DietaryRestrictionEntity extends BasicEntity{
 
     private String name;
+
+    public DietaryRestrictionEntity() {
+    }
+
+    public DietaryRestrictionEntity(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
