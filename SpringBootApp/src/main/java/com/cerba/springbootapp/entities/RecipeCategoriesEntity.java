@@ -4,4 +4,6 @@ import jakarta.persistence.Entity;
 
 @Entity
 public class RecipeCategoriesEntity extends BasicEntity {
+
+    private String name;
 }

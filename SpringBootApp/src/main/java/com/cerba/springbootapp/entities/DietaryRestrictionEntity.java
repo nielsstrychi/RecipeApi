@@ -3,5 +3,7 @@ package com.cerba.springbootapp.entities;
 import jakarta.persistence.Entity;
 
 @Entity
-public class DietaryEntity extends BasicEntity{
+public class DietaryRestrictionEntity extends BasicEntity{
+
+    private String name;
 }
