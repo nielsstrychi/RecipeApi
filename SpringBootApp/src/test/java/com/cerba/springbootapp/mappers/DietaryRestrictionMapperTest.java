@@ -2,7 +2,6 @@ package com.cerba.springbootapp.mappers;
 
 import com.cerba.springbootapp.datatransferobjects.DietaryRestrictionDTO;
 import com.cerba.springbootapp.entities.DietaryRestrictionEntity;
-import com.cerba.springbootapp.mappers.*;
 import org.junit.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.context.ApplicationContext;
